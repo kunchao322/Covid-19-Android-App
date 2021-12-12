@@ -32,7 +32,7 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     CountryCodePicker countryCodePicker;
-    TextView mTodayTotal, mTotal, mActive, mTodayActive, mRecovered, mTodayRecovered, mDeaths, mTodayDeaths;
+    TextView todayCases, cases, active, recovered, todayRecovered, deaths, todayDeaths;
 
     String country;
     TextView mFilter; //used in recyclerView
@@ -53,14 +53,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         getSupportActionBar().hide();
 
         countryCodePicker= findViewById(R.id.ccp);
-        mTodayActive = findViewById(R.id.todayactive);
-        mActive = findViewById(R.id.totalactive);
-        mDeaths = findViewById(R.id.totaldeaths);
-        mTodayDeaths = findViewById(R.id.todaydeaths);
-        mRecovered = findViewById(R.id.todayrecovered);
-        mTodayRecovered = findViewById(R.id.totalrecovered);
-        mTotal = findViewById(R.id.totalcases);
-        mTodayTotal = findViewById(R.id.todaytotal);
+//        mTodayActive = findViewById(R.id.todayactive);
+        active = findViewById(R.id.totalactive);
+        deaths = findViewById(R.id.totaldeaths);
+        todayDeaths = findViewById(R.id.todaydeaths);
+        recovered = findViewById(R.id.todayrecovered);
+        todayRecovered = findViewById(R.id.totalrecovered);
+        cases = findViewById(R.id.totalcases);
+        todayCases = findViewById(R.id.todaytotal);
 
         mPieChart =findViewById(R.id.piechart);
         spinner = findViewById(R.id.spinner);
@@ -125,13 +125,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 modelClassList.addAll(response.body());
                 for(int i = 0; i < modelClassList.size(); i++){
                     if(modelClassList.get(i).getCountry().equals(country)){
-                        mActive.setText((modelClassList.get(i).getActive()));
-                        mTodayDeaths.setText((modelClassList.get(i).getTodayDeaths()));
-                        mTodayRecovered.setText((modelClassList.get(i).getTodayRecovered()));
-                        mTodayTotal.setText((modelClassList.get(i).getTodayCases()));
-                        mTotal.setText((modelClassList.get(i).getCases()));
-                        mDeaths.setText((modelClassList.get(i).getDeaths()));
-                        mRecovered.setText((modelClassList.get(i).getRecovered()));
+                        active.setText((modelClassList.get(i).getActive()));
+                        todayDeaths.setText((modelClassList.get(i).getTodayDeaths()));
+                        todayRecovered.setText((modelClassList.get(i).getTodayRecovered()));
+                        todayCases.setText((modelClassList.get(i).getTodayCases()));
+                        cases.setText((modelClassList.get(i).getCases()));
+                        deaths.setText((modelClassList.get(i).getDeaths()));
+                        recovered.setText((modelClassList.get(i).getRecovered()));
 
                         int active, total, recovered, deaths;
 

@@ -8,39 +8,39 @@ import com.google.gson.annotations.SerializedName;
  */
 public class ModelClass {
     //values want to fetch
-    @SerializedName("cases")
-    @Expose
-    String cases;
+//    @SerializedName("cases")
+//    @Expose
+//    String cases;
+//
+//    @SerializedName("todayCases")
+//    @Expose
+//    String todayCases;
+//
+//    @SerializedName("deaths")
+//    @Expose
+//    String deaths;
+//
+//    @SerializedName("todayDeaths")
+//    @Expose
+//    String todayDeaths;
+//
+//    @SerializedName("recovered")
+//    @Expose
+//    String recovered;
+//
+//    @SerializedName("todayRecovered")
+//    @Expose
+//    String todayRecovered;
+//
+//    @SerializedName("active")
+//    @Expose
+//    String active;
+//
+//    @SerializedName("country")
+//    @Expose
+//    String country;
 
-    @SerializedName("todayCases")
-    @Expose
-    String todayCases;
-
-    @SerializedName("deaths")
-    @Expose
-    String deaths;
-
-    @SerializedName("todayDeaths")
-    @Expose
-    String todayDeaths;
-
-    @SerializedName("recovered")
-    @Expose
-    String recovered;
-
-    @SerializedName("todayRecovered")
-    @Expose
-    String todayRecovered;
-
-    @SerializedName("active")
-    @Expose
-    String active;
-
-    @SerializedName("country")
-    @Expose
-    String country;
-
-//    String cases, todayCases,deaths, todayDeaths,recovered, todayRecovered, active, country;
+    String cases, todayCases, deaths, todayDeaths,recovered, todayRecovered, active, country;
 
     public ModelClass(String cases, String todayCases, String deaths, String todayDeaths, String recovered, String todayRecovered, String active, String country) {
         this.cases = cases;

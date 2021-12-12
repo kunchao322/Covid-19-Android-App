@@ -247,7 +247,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/total"
-                        android:textSize="15sp"
+                        android:textSize="10sp"
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_gravity="center">
@@ -325,7 +325,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/active"
-                            android:textSize="15sp"
+                            android:textSize="10sp"
                             android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:layout_gravity="center">
@@ -348,20 +348,9 @@
                             android:textSize="12sp"
                             android:text="@string/number"
                             android:id="@+id/totalactive"
+                            android:gravity="center
+"
                             android:textColor="@color/black"
-                            android:layout_weight="1">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textStyle="bold"
-                            android:textSize="10sp"
-                            android:text="@string/number"
-                            android:id="@+id/todayactive"
-                            android:textColor="@color/green"
-                            android:layout_marginLeft="5dp"
                             android:layout_weight="1">
 
                         </TextView>
@@ -403,7 +392,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/recovered"
-                            android:textSize="15sp"
+                            android:textSize="10sp"
                             android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:layout_gravity="center">
@@ -480,7 +469,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/deaths"
-                            android:textSize="15sp"
+                            android:textSize="10sp"
                             android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:layout_gravity="center">
